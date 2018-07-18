@@ -1,0 +1,25 @@
+{
+  "name": "ExQuizMe",
+  "version": "1.0.0",
+  "description": "ExQuizMe is a quiz app from students from students",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "FutureBook",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "joi": "^13.4.0",
+    "jquery": "^3.3.1",
+    "mongoose": "*"
+  }
+}
